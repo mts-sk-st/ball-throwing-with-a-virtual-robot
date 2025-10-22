@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\Development.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{5FD8723D-1C26-495D-9AE4-DDAA5427A099}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Development.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\DevelopmentEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{75B08A38-2F26-4791-81B5-8FEC6DFD4403}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\Development">
+			<UniqueIdentifier>{C962D7D8-77D1-465A-A808-C9FEBF8C7FD5}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\Development\Development.Build.cs">
+			<Filter>Source\Development</Filter>
+		</None >
+		<ClCompile Include="..\..\Source\Development\Development.cpp">
+			<Filter>Source\Development</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Development\Development.h">
+			<Filter>Source\Development</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Development\IKIntegration.cpp">
+			<Filter>Source\Development</Filter>
+		</ClCompile >
+		<ClInclude Include="..\..\Source\Development\IKIntegration.h">
+			<Filter>Source\Development</Filter>
+		</ClInclude >
+		<ClCompile Include="..\..\Source\Development\kdl_parser.cpp">
+			<Filter>Source\Development</Filter>
+		</ClCompile >
+		<None Include="..\..\Source\Development\kdl_parser.hpp">
+			<Filter>Source\Development</Filter>
+		</None >
+		<None Include="..\..\Source\Development\robot.urdf">
+			<Filter>Source\Development</Filter>
+		</None >
+		<None Include="..\..\Source\Development\visibility_control.hpp">
+			<Filter>Source\Development</Filter>
+		</None >
+	</ItemGroup>
+</Project>
