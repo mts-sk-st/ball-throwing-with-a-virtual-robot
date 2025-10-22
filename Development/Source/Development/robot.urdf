@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<robot name="robot">
+
+	<link name="world"/>
+
+	<link name="base">
+		<visual>
+			<geometry>
+				<cylinder length="0.3" radius="0.5"/>
+			</geometry>
+		</visual>
+	</link>
+
+	<joint name="world_to_base" type="continuous">
+		<parent link="world"/>
+		<child link="base"/>
+		<axis xyz="0 0 1"/>
+	</joint>
+
+	<link name="arm1">
+		<visual>
+			<geometry>
+				<box size="0.25 0.25 1.0"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="-0.125 0 0.5"/>
+		</visual>
+	</link>
+
+	<joint name="base_to_arm1" type="revolute">
+		<parent link="base"/>
+		<child link="arm1"/>
+		<axis xyz="1 0 0"/>
+		<limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+		<origin xyz="0 0 0.15"/>
+	</joint>
+
+	<link name="arm2">
+		<visual>
+			<geometry>
+				<box size="0.25 0.25 1.0"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0.125 0 0.375"/>
+		</visual>
+	</link>
+
+	<joint name="arm1_to_arm2" type="continuous">
+		<parent link="arm1"/>
+		<child link="arm2"/>
+		<origin xyz="0 0 0.875"/>
+	</joint>
+
+	<link name="hand">
+		<visual>
+			<geometry>
+				<box size="0.3 0.3 0.3"/>
+			</geometry>
+			<origin rpy="0 0 0" xyz="0 0 0"/>
+		</visual>
+	</link>
+
+	<joint name="arm2_to_hand" type="fixed">
+		<parent link="arm2"/>
+		<child link="hand"/>
+		<origin xyz="0.125 0 0.875"/>-->
+	</joint>
+
+</robot>
+
